@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main(){
   runApp(MaterialApp(
     home: Home(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
@@ -63,7 +64,7 @@ void _calculate(){
        appBar: AppBar(
          title: Text("Calculadora de IMC"),
          centerTitle: true,
-         backgroundColor: Colors.green,
+         backgroundColor: Colors.blueAccent,
          actions: <Widget>[
            IconButton(
              icon: Icon(Icons.refresh),
@@ -79,17 +80,17 @@ void _calculate(){
            child:Column(
          crossAxisAlignment: CrossAxisAlignment.stretch,
          children: <Widget>[
-           Icon(Icons.person_outline, size: 120.0,color :Colors.green),
+           Icon(Icons.person_outline, size: 120.0,color :Colors.blueAccent),
            TextFormField(
              keyboardType: TextInputType.number,
              decoration: InputDecoration(
                labelText: "Peso (Kg)",
                labelStyle: TextStyle(
-                 color:Colors.green
+                 color:Colors.blueAccent
                ),
              ),
              textAlign: TextAlign.center,
-             style: TextStyle(color: Colors.green,fontSize: 25.0),
+             style: TextStyle(color: Colors.blueAccent,fontSize: 25.0),
              controller: weightController,
              validator: (value) {
                if(value.isEmpty){
@@ -102,11 +103,11 @@ void _calculate(){
              decoration: InputDecoration(
                labelText: "Altura (cm)",
                labelStyle: TextStyle(
-                 color:Colors.green
+                 color:Colors.blueAccent
                ),
              ),
              textAlign: TextAlign.center,
-             style: TextStyle(color: Colors.green,fontSize: 25.0),
+             style: TextStyle(color: Colors.blueAccent,fontSize: 25.0),
              controller: heightController,
              validator: (value) {
                if(value.isEmpty){
@@ -126,13 +127,13 @@ void _calculate(){
              },
              child: Text("Calcular",
              style: TextStyle(color: Colors.white,fontSize: 25.0),),
-             color:Colors.green
+             color:Colors.blueAccent
            ),
            ),
            ),
            Text(_infoText,
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.green,fontSize: 25.0)
+              style: TextStyle(color: Colors.blueAccent,fontSize: 25.0)
             )
          ],
        ),

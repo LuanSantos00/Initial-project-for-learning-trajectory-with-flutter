@@ -1,4 +1,4 @@
-package com.example.calculadora_imc
+package com.by_Luan_Santos.Calculadora_de_IMC
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
